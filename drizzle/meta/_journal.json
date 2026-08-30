@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1787298980156,
+      "tag": "0000_colossal_lady_bullseye",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1787476442047,
+      "tag": "0001_silky_may_parker",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1787835045236,
+      "tag": "0002_handle_new_user_trigger",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1787840975753,
+      "tag": "0003_customers_auth_users_fk",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1788070317400,
+      "tag": "0004_enable_rls_public_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1788072562701,
+      "tag": "0005_stock_movements",
+      "breakpoints": true
+    }
+  ]
+}

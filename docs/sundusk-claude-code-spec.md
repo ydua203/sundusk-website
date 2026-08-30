@@ -35,7 +35,7 @@ Build one feature at a time in the order in section 12. Do not scaffold everythi
 
 ### Hard rules — never violate these in code or copy
 
-1. **Never claim size inclusivity.** The range stops at XL. No "for every body", no "all sizes", no plus-size language.
+1. **Never claim general size inclusivity.** Standard stock runs XS–XL only — no "for every body", no "all sizes", no plus-size language. Custom, made-to-order sizing beyond XL is a distinct paid service (see `/custom-fit`, added after this spec was written — docs/PROMO-AND-CUSTOM-FIT-NOTES.md) and may be mentioned factually on product pages ("need a size beyond XL? custom sizing available on request"). Never frame it as the standard range being larger than it is, and never use inclusivity language ("we fit every body") to describe it — it's a bespoke request process, not a size offering.
 2. **Never claim products are unique or one-of-a-kind.** Designs repeat across customers.
 3. **Never mention cash on delivery or free returns.** Returns are size-exchange only, customer pays return shipping.
 4. **No fake urgency.** No countdown timers, no "12 people viewing", no fabricated stock scarcity, no struck-through compare-at prices.
@@ -698,7 +698,7 @@ Questions about sizing, an order, or anything else — we answer all of them.
 Email:     hellosundusk.in@gmail.com
 WhatsApp:  +91 93101 13431
 Phone:     +91 93101 13431
-Instagram: @sundusk
+Instagram: @sundusk.official
 
 We reply within 24 hours, Monday to Saturday.
 

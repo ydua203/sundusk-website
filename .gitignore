@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# secrets — never commit a private key, whatever it's named
+github_key
+github_key.pub
+id_rsa*
+id_ed25519*
+
+# source photography (the raw model-shoot PDFs, ~870MB total, several
+# individual files over GitHub's 100MB hard file-size limit) — not needed
+# to run or deploy the app, which only ever reads the already-extracted
+# JPEGs in public/products/. Keep the PDFs local; see
+# docs/PRODUCT-PHOTOS-NOTES.md for how they were processed.
+/sundusk-model-shoot-tops-pdf/
+
+# local tool settings, not meant to travel with the repo
+.claude/

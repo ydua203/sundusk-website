@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
+/*
+ * Sundusk design tokens — spec section 3.
+ * Three colours on screen at any time. Terracotta is an accent
+ * (badges, hover states), never a background on its own.
+ */
+@theme {
+  --color-sand: #fbf2e4; /* page background, default */
+  --color-cream: #ffe7c3; /* alternating sections */
+  --color-espresso: #3c1800; /* text, buttons, footer */
+  --color-terra: #b5622f; /* accent — badges, hover states only */
+  --color-line: #e4d3b8; /* borders, dividers */
+  --color-muted: #a98a68; /* placeholder text, meta */
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-hanken), Arial, sans-serif;
+
+  /* Sharp corners everywhere — editorial, not generic SaaS. */
+  --radius-none: 0px;
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
+  --radius-full: 0px;
+
+  /* Flat surfaces on sand — no box shadows anywhere. */
+  --shadow-xs: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-2xl: none;
+  --shadow-inner: none;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-sand);
+  --foreground: var(--color-espresso);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--color-line);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-sand);
+  color: var(--color-espresso);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* Keep focus rings visible — never strip outlines (spec section 13). */
+:focus-visible {
+  outline: 2px solid var(--color-terra);
+  outline-offset: 2px;
 }
